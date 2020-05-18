@@ -36,6 +36,7 @@ slapd slapd/domain string $config_domain
 slapd shared/organization string $config_organization_name
 EOF
 
+apt update
 apt-get install -y --no-install-recommends slapd ldap-utils
 
 # create the people container.
